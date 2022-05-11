@@ -9,7 +9,16 @@ public class MapMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        StartCoroutine(SpeedUp(3));
+    }
+
+    IEnumerator SpeedUp(float delayTime)
+    {
+        yield return new WaitForSeconds(delayTime);
+
+        mapSpeed += 0.3f;
+
+        StartCoroutine(SpeedUp(3));
     }
 
     // Update is called once per frame

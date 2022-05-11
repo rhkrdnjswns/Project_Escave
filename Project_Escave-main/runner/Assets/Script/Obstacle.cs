@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
+    [SerializeField] private GameObject GameOver;
+    public static bool gameOver = false;
+
+    [SerializeField] private GameObject Player;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        GameOver.SetActive(false);
     }
 
     // Update is called once per frame
@@ -20,8 +25,12 @@ public class Obstacle : MonoBehaviour
     {
         if(collision.gameObject.tag.CompareTo("Player") == 0)
         {
-            //gameover
-            collision.gameObject.SetActive(false);
+            if(Player.GetComponent<Character>().invincibility == false)
+            {
+                gameOver = true;
+                GameOver.SetActive(true);
+                Time.timeScale = 0;
+            }
         }
     }
 }

@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
 
         int temp2 = DataManager.Instance.score % 100;
 
-        temp = temp2 / 10;
+        temp2 = temp2 / 10;
         NumberImage[1].GetComponent<Image>().sprite = Number[temp2];
 
         int temp3 = DataManager.Instance.score % 10;
