@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -53,38 +53,41 @@
     <UnityVersion>2021.1.20f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Assets\DOTween\Modules\DOTweenModuleSprite.cs" />
+    <Compile Include="Assets\Cainos\Pixel Art Monster - Dungeon\Script\PixelMonster.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModulePhysics2D.cs" />
     <Compile Include="Assets\Script\WJ\StartManager.cs" />
     <Compile Include="Assets\Gazielle\Scripts\ParallaxLayer.cs" />
+    <Compile Include="Assets\Cainos\Pixel Art Monster - Dungeon\Script\ExposePropertyAttribute.cs" />
     <Compile Include="Assets\Script\Coin.cs" />
+    <Compile Include="Assets\Cainos\Pixel Art Monster - Dungeon\Script\MonsterController.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModuleUI.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
     <Compile Include="Assets\Script\Obstacle.cs" />
     <Compile Include="Assets\Script\Booster.cs" />
+    <Compile Include="Assets\Cainos\Pixel Art Monster - Dungeon\Script\AutoDestroy.cs" />
     <Compile Include="Assets\Script\MapMove.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModulePhysics.cs" />
+    <Compile Include="Assets\Cainos\Pixel Art Monster - Dungeon\Script\MonsterFlyingController.cs" />
     <Compile Include="Assets\Script\Character.cs" />
     <Compile Include="Assets\Script\WJ\MainManager.cs" />
+    <Compile Include="Assets\Cainos\Pixel Art Monster - Dungeon\Script\ProjectileLauncher.cs" />
+    <Compile Include="Assets\Cainos\Pixel Art Monster - Dungeon\Script\_Demo\UIDemo.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModuleUtils.cs" />
+    <Compile Include="Assets\Cainos\Pixel Art Monster - Dungeon\Script\AnimationEventReceiver.cs" />
+    <Compile Include="Assets\Cainos\Pixel Art Monster - Dungeon\Script\_Demo\CameraFollow.cs" />
+    <Compile Include="Assets\Cainos\Pixel Art Monster - Dungeon\Script\Projectile.cs" />
     <Compile Include="Assets\Script\DataManager.cs" />
     <Compile Include="Assets\Gazielle\Scripts\PixelPerfectCamera.cs" />
+    <Compile Include="Assets\Cainos\Pixel Art Monster - Dungeon\Script\MonsterInputMouseAndKeyboard.cs" />
     <Compile Include="Assets\Script\GameManager.cs" />
     <Compile Include="Assets\Gazielle\Scripts\CameraMovements.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModuleAudio.cs" />
     <Compile Include="Assets\Script\WJ\SceneLoadManager.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModuleEPOOutline.cs" />
-    <Compile Include="Assets\Cainos\Pixel Art Monster - Dungeon\Script\AutoDestroy.cs" />
-    <Compile Include="Assets\Cainos\Pixel Art Monster - Dungeon\Script\Projectile.cs" />
-    <Compile Include="Assets\Cainos\Pixel Art Monster - Dungeon\Script\MonsterController.cs" />
-    <Compile Include="Assets\Cainos\Pixel Art Monster - Dungeon\Script\_Demo\UIDemo.cs" />
-    <Compile Include="Assets\Cainos\Pixel Art Monster - Dungeon\Script\AnimationEventReceiver.cs" />
-    <Compile Include="Assets\Cainos\Pixel Art Monster - Dungeon\Script\MonsterFlyingController.cs" />
-    <Compile Include="Assets\Cainos\Pixel Art Monster - Dungeon\Script\MonsterInputMouseAndKeyboard.cs" />
-    <Compile Include="Assets\Cainos\Pixel Art Monster - Dungeon\Script\ProjectileLauncher.cs" />
-    <Compile Include="Assets\Cainos\Pixel Art Monster - Dungeon\Script\_Demo\CameraFollow.cs" />
-    <Compile Include="Assets\Cainos\Pixel Art Monster - Dungeon\Script\PixelMonster.cs" />
-    <Compile Include="Assets\Cainos\Pixel Art Monster - Dungeon\Script\ExposePropertyAttribute.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
