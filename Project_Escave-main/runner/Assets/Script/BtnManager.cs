@@ -11,7 +11,7 @@ public class BtnManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        MapMove gmst = GameObject.Find("Map").GetComponent<MapMove>();
+        gmst = GameObject.Find("Map").GetComponent<MapMove>();
     }
 
     // Update is called once per frame
