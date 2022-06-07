@@ -15,6 +15,7 @@ public class StartManager : MonoBehaviour
     public Vector3 startPoint = new Vector3(-6.6f, 0, -10);
     private Color color;
     public Color[] cameraColor;
+    public GameObject mainUI;
     private int arrayIndex = 0;
     private bool isReady;
     private void SuffelArray()
@@ -84,11 +85,17 @@ public class StartManager : MonoBehaviour
         }
 
     }
-    private IEnumerator Co_LoadMainScene()
+    private IEnumerator Co_LoadMain()
     {
         sceneLoad.DOColor(Color.black, 2f);
         yield return new WaitForSeconds(2f);
-        ScnenLoadManager.LoadMainScene();
+        foreach (var item in titleText)
+        {
+            item.gameObject.SetActive(false);
+        }
+        startText.gameObject.SetActive(false);
+        mainUI.SetActive(true);
+        sceneLoad.DOColor(Color.clear, 2f);
     }
     private void Update()
     {
@@ -99,7 +106,7 @@ public class StartManager : MonoBehaviour
         if(Input.touchCount > 0 || Input.GetKeyDown(KeyCode.Mouse0))
         {
             Debug.Log("게임 시작");
-            StartCoroutine(Co_LoadMainScene());
+            StartCoroutine(Co_LoadMain());
             isReady = false;
         }
     }
