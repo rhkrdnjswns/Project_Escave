@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>8.0</LangVersion>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -53,74 +53,71 @@
     <UnityVersion>2021.1.20f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Assets\DOTween\Modules\DOTweenModuleSprite.cs" />
-    <Compile Include="Assets\Cainos\Pixel Art Monster - Dungeon\Script\PixelMonster.cs" />
+    <Compile Include="Assets\03_Resource\Cainos\Pixel Art Monster - Dungeon\Script\PixelMonster.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModulePhysics2D.cs" />
-    <Compile Include="Assets\Script\WJ\StartManager.cs" />
-    <Compile Include="Assets\Script\WJ\CharacterData.cs" />
-    <Compile Include="Assets\Gazielle\Scripts\ParallaxLayer.cs" />
-    <Compile Include="Assets\Cainos\Pixel Art Monster - Dungeon\Script\ExposePropertyAttribute.cs" />
-    <Compile Include="Assets\Script\Coin.cs" />
-    <Compile Include="Assets\Cainos\Pixel Art Monster - Dungeon\Script\MonsterController.cs" />
+    <Compile Include="Assets\02_Script\WJ\StartManager.cs" />
+    <Compile Include="Assets\02_Script\WJ\CharacterData.cs" />
+    <Compile Include="Assets\03_Resource\Gazielle\Scripts\ParallaxLayer.cs" />
+    <Compile Include="Assets\03_Resource\Cainos\Pixel Art Monster - Dungeon\Script\ExposePropertyAttribute.cs" />
+    <Compile Include="Assets\02_Script\Coin.cs" />
+    <Compile Include="Assets\03_Resource\Cainos\Pixel Art Monster - Dungeon\Script\MonsterController.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModuleUI.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
-    <Compile Include="Assets\Script\ScoreManager.cs" />
-    <Compile Include="Assets\Script\Obstacle.cs" />
-    <Compile Include="Assets\Script\Booster.cs" />
-    <Compile Include="Assets\Script\WJ\GameManager.cs" />
-    <Compile Include="Assets\Cainos\Pixel Art Monster - Dungeon\Script\AutoDestroy.cs" />
-    <Compile Include="Assets\Script\MapMove.cs" />
-    <Compile Include="Assets\Script\BtnManager.cs" />
+    <Compile Include="Assets\02_Script\ScoreManager.cs" />
+    <Compile Include="Assets\02_Script\Obstacle.cs" />
+    <Compile Include="Assets\02_Script\Booster.cs" />
+    <Compile Include="Assets\02_Script\WJ\GameManager.cs" />
+    <Compile Include="Assets\03_Resource\Cainos\Pixel Art Monster - Dungeon\Script\AutoDestroy.cs" />
+    <Compile Include="Assets\02_Script\MapMove.cs" />
+    <Compile Include="Assets\02_Script\BtnManager.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModulePhysics.cs" />
-    <Compile Include="Assets\Script\WJ\StyleData.cs" />
-    <Compile Include="Assets\Cainos\Pixel Art Monster - Dungeon\Script\MonsterFlyingController.cs" />
-    <Compile Include="Assets\Script\Character.cs" />
-    <Compile Include="Assets\Cainos\Pixel Art Monster - Dungeon\Script\ProjectileLauncher.cs" />
-    <Compile Include="Assets\Cainos\Pixel Art Monster - Dungeon\Script\_Demo\UIDemo.cs" />
+    <Compile Include="Assets\02_Script\WJ\StyleData.cs" />
+    <Compile Include="Assets\03_Resource\Cainos\Pixel Art Monster - Dungeon\Script\MonsterFlyingController.cs" />
+    <Compile Include="Assets\02_Script\Character.cs" />
+    <Compile Include="Assets\03_Resource\Cainos\Pixel Art Monster - Dungeon\Script\ProjectileLauncher.cs" />
+    <Compile Include="Assets\03_Resource\Cainos\Pixel Art Monster - Dungeon\Script\_Demo\UIDemo.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModuleUtils.cs" />
-    <Compile Include="Assets\Cainos\Pixel Art Monster - Dungeon\Script\AnimationEventReceiver.cs" />
-    <Compile Include="Assets\Cainos\Pixel Art Monster - Dungeon\Script\_Demo\CameraFollow.cs" />
-    <Compile Include="Assets\Cainos\Pixel Art Monster - Dungeon\Script\Projectile.cs" />
-    <Compile Include="Assets\Script\DataManager.cs" />
-    <Compile Include="Assets\Gazielle\Scripts\PixelPerfectCamera.cs" />
-    <Compile Include="Assets\Cainos\Pixel Art Monster - Dungeon\Script\MonsterInputMouseAndKeyboard.cs" />
-    <Compile Include="Assets\Script\WJ\MainManager.cs" />
-    <Compile Include="Assets\Gazielle\Scripts\CameraMovements.cs" />
+    <Compile Include="Assets\03_Resource\Cainos\Pixel Art Monster - Dungeon\Script\AnimationEventReceiver.cs" />
+    <Compile Include="Assets\03_Resource\Cainos\Pixel Art Monster - Dungeon\Script\_Demo\CameraFollow.cs" />
+    <Compile Include="Assets\03_Resource\Cainos\Pixel Art Monster - Dungeon\Script\Projectile.cs" />
+    <Compile Include="Assets\02_Script\DataManager.cs" />
+    <Compile Include="Assets\03_Resource\Gazielle\Scripts\PixelPerfectCamera.cs" />
+    <Compile Include="Assets\03_Resource\Cainos\Pixel Art Monster - Dungeon\Script\MonsterInputMouseAndKeyboard.cs" />
+    <Compile Include="Assets\02_Script\WJ\MainManager.cs" />
+    <Compile Include="Assets\03_Resource\Gazielle\Scripts\CameraMovements.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModuleAudio.cs" />
-    <Compile Include="Assets\Script\WJ\SceneLoadManager.cs" />
+    <Compile Include="Assets\02_Script\WJ\SceneLoadManager.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModuleEPOOutline.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\03_Resource\TextMesh Pro\Shaders\TMPro.cginc" />
+    <None Include="Assets\03_Resource\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\DOTween\DOTween.XML" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
-    <None Include="Assets\Cainos\Pixel Art Monster - Dungeon\Shader\SH Pixel Monster Transparent.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
-    <None Include="Assets\Cainos\Pixel Art Platformer - Village Props\Changelog.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
-    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-    <None Include="Assets\Cainos\Pixel Art Monster - Dungeon\Changelog.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\03_Resource\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\03_Resource\Cainos\Pixel Art Monster - Dungeon\Shader\SH Pixel Monster Transparent.shader" />
+    <None Include="Assets\03_Resource\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+    <None Include="Assets\03_Resource\Cainos\Pixel Art Platformer - Village Props\Changelog.txt" />
+    <None Include="Assets\03_Resource\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\03_Resource\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\03_Resource\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\03_Resource\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\03_Resource\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\03_Resource\TextMesh Pro\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\03_Resource\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+    <None Include="Assets\03_Resource\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\03_Resource\Cainos\Pixel Art Monster - Dungeon\Changelog.txt" />
+    <None Include="Assets\03_Resource\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\03_Resource\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\DOTween\DOTween.dll" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
-    <None Include="Assets\Cainos\Pixel Art Monster - Dungeon\Shader\SH Pixel Monster Transparent - 2D Lit.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
-    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
+    <None Include="Assets\03_Resource\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\03_Resource\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\03_Resource\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\03_Resource\Cainos\Pixel Art Monster - Dungeon\Shader\SH Pixel Monster Transparent - 2D Lit.shader" />
+    <None Include="Assets\03_Resource\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\03_Resource\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\03_Resource\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\03_Resource\TextMesh Pro\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\DOTween\readme.txt" />
   </ItemGroup>
   <ItemGroup>
