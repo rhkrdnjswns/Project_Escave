@@ -2,6 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+public enum eCharType
+{
+    Explorer,
+    Healer,
+    Assassin,
+    Mimic,
+    Magician
+}
+
 public class Character : MonoBehaviour
 {
     private float jump = 14f;
