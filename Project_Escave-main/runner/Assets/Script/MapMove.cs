@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MapMove : MonoBehaviour
 {
+    [SerializeField] private GameObject Character;
     public float mapSpeed = 9f;
 
     // Start is called before the first frame update
@@ -15,7 +16,7 @@ public class MapMove : MonoBehaviour
     public void GameStart()
     {
         StartCoroutine(SpeedUp(3));
-
+        Character.transform.position = new Vector3(-2.8f, -1.15f, 0);
         this.gameObject.transform.position = new Vector3(0, 0, 0);
         DataManager.Instance.score = 0;
     }
