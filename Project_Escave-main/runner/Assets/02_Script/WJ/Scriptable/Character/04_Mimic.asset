@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1767145060e512347998447cc32ce610, type: 3}
+  m_Name: 04_Mimic
+  m_EditorClassIdentifier: 
+  name: "\uBBF8\uBBF9"
+  record: 0
+  texture: {fileID: 7888922196035610388, guid: 81c0e913b5df0924a82b90e85f022ed8, type: 3}
+  styleDataArray:
+  - {fileID: 11400000, guid: fd131da83d865874ea9c27af1f3ca32d, type: 2}
+  - {fileID: 11400000, guid: f6840567601e48e49be0050dc003a819, type: 2}

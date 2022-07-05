@@ -92,6 +92,7 @@
     <Compile Include="Assets\DOTween\Modules\DOTweenModuleAudio.cs" />
     <Compile Include="Assets\Script\WJ\SceneLoadManager.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModuleEPOOutline.cs" />
+    <Compile Include="Assets\Script\MapLoad.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
