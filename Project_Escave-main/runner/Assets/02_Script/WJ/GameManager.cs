@@ -30,9 +30,9 @@ public class GameManager : MonoBehaviour
         instance.characterDataArray[0].IsUnlock = true; // 추후 모든 캐릭터 언락 데이터 정렬로 변경
     }
 
-    // Update is called once per frame
     void Update()
     {
+        //전부 다 테스트 코드
         if (Input.GetKeyDown(KeyCode.H))
         {
             for (int i = 0; i < instance.characterDataArray.Length; i++)

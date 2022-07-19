@@ -15,7 +15,7 @@ public class MainManager : MonoBehaviour
     public Text styleTxt;
     public Image[] styleIconArray;
     public GameObject stylePopUp;
-    public GameObject styleConditionPopUp;
+    public GameObject conditionPopUp;
     private CharacterData currentCharacter;
     private void Awake()
     {
@@ -53,6 +53,28 @@ public class MainManager : MonoBehaviour
     {
         if(currentCharacter == GameManager.instance.characterDataArray[index] || !GameManager.instance.characterDataArray[index].IsUnlock)
         {
+            string txt;
+            conditionPopUp.SetActive(!conditionPopUp.activeSelf);
+            switch (index)
+            {
+                case 1:
+                    txt = "누적 기록 2000 달성";
+                    break;
+                case 2:
+                    txt = "누적 기록 4000 달성";
+                    break;
+                case 3:
+                    txt = "누적 기록 8000 달성";
+                    break;
+                case 4:
+                    txt = "누적 기록 10000 달성";
+                    break;
+                default:
+                    txt = $"{index} : Index Error!";
+                    conditionPopUp.SetActive(!conditionPopUp.activeSelf);
+                    break;
+            }      
+            conditionPopUp.GetComponentInChildren<Text>().text = txt;
             return;
         }
         if(currentCharacter != null)
@@ -136,8 +158,8 @@ public class MainManager : MonoBehaviour
     {
         if (!currentCharacter.styleDataArray[index].IsUnlock)
         {
-            styleConditionPopUp.SetActive(!styleConditionPopUp.activeSelf);
-            styleConditionPopUp.GetComponentInChildren<Text>().text = currentCharacter.styleDataArray[index].condition;
+            conditionPopUp.SetActive(!conditionPopUp.activeSelf);
+            conditionPopUp.GetComponentInChildren<Text>().text = currentCharacter.styleDataArray[index].condition;
             return;
         }
         if(currentCharacter.StyleIndex >= 0)
@@ -147,8 +169,8 @@ public class MainManager : MonoBehaviour
         styleUIArray[index].GetComponent<Outline>().enabled = true;
         currentCharacter.StyleIndex = index;
     }
-    public void BtnEvt_ActiveStyleConditionUI()
+    public void BtnEvt_ActiveConditionUI()
     {
-        styleConditionPopUp.SetActive(!styleConditionPopUp.activeSelf);
+        conditionPopUp.SetActive(!conditionPopUp.activeSelf);
     }
 }

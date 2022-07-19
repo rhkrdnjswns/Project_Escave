@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: "\uAD6C\uB450\uC1E0"
   icon: {fileID: -1473052192599986116, guid: d19dd6c82d916fd459afcc8d0a515b8f, type: 3}
-  condition: 
+  condition: "\uC9C8\uC8FC \uC544\uC774\uD15C \uC5C6\uC774 \uCD5C\uACE0 \uAE30\uB85D
+    2000 \uB2EC\uC131"
