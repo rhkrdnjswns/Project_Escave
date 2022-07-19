@@ -21,7 +21,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 5fe30d2c7d798d24d9dafa00c128a72d, type: 2}
+  m_Motion: {fileID: 7400000, guid: 3cef4e3f0301910459c0f6094e92182e, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -98,7 +98,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Thief
+  m_Name: Mimic
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Sliding
@@ -265,7 +265,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 9b72f4c5c898e514d94cdedf318ecd54, type: 2}
+  m_Motion: {fileID: 7400000, guid: ce8b3adc937137a44841b9cd49f04471, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -345,7 +345,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 5915ebcce1425d04a89c287e96e5b3c1, type: 2}
+  m_Motion: {fileID: 7400000, guid: e067ebc23b56f85419821ec3d368858b, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

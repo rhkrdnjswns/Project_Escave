@@ -36,7 +36,16 @@ public class Character : MonoBehaviour
 
     private void Awake()
     {
+        Map2 = GameObject.Find("Map2");
+        Map2Back = GameObject.Find("Crystal_Cave");
+        Map2celling = GameObject.Find("001_ceiling (1)");
+
+        Map1 = GameObject.Find("Map1");
+        Map1Back = GameObject.Find("Basic_Cave");
+        Map1celling = GameObject.Find("001_ceiling");
+
         animator = GetComponent<Animator>();
+
         Map = GameObject.FindWithTag("Map");
         invincibility = false;
     }
@@ -97,13 +106,13 @@ public class Character : MonoBehaviour
     public void SlidBtn()
     {
         animator.SetBool("Sliding", true);
-        this.GetComponent<BoxCollider2D>().size = new Vector2(3, 1);
+        this.GetComponent<BoxCollider2D>().size = new Vector2(3, 2);
     }
 
     public void SlidBtnUp()
     {
         animator.SetBool("Sliding", false);
-        this.GetComponent<BoxCollider2D>().size = new Vector2(1.560223f, 3.557484f);
+        this.GetComponent<BoxCollider2D>().size = new Vector2(2.113647f, 3.741959f);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -9,6 +9,9 @@ public class Obstacle : MonoBehaviour
 
     [SerializeField] private GameObject Player;
 
+    private float rotspeed = 700f;
+    private bool BoosterDest = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +23,12 @@ public class Obstacle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(BoosterDest == true)
+        {
+            this.transform.parent = null;
+            this.gameObject.transform.Rotate(new Vector3(0, 0, rotspeed * Time.deltaTime));
+            this.gameObject.transform.Translate(new Vector3(20f * Time.deltaTime * 5, 20f * Time.deltaTime * 5, 0));
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -32,6 +40,11 @@ public class Obstacle : MonoBehaviour
                 gameOver = true;
                 GameOver.SetActive(true);
                 Time.timeScale = 0;
+            }
+            else if (Player.GetComponent<Character>().invincibility == true)
+            {
+                BoosterDest = true;
+                Destroy(gameObject, 3f);
             }
         }
     }
