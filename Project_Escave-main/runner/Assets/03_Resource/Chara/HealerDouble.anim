@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BoxRub
+  m_Name: HealerDouble
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,13 +20,7 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 4154116247259710548, guid: fcc1054e3a4615946b129004a5d6361a, type: 3}
-    - time: 0.083333336
-      value: {fileID: 6566490071058371313, guid: fcc1054e3a4615946b129004a5d6361a, type: 3}
-    - time: 0.16666667
-      value: {fileID: -3277120799113184706, guid: fcc1054e3a4615946b129004a5d6361a, type: 3}
-    - time: 0.25
-      value: {fileID: -5333899125598757372, guid: fcc1054e3a4615946b129004a5d6361a, type: 3}
+      value: {fileID: 7778997339488307486, guid: 813de4a3235b5c145a354b41f7e75dd4, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -46,21 +40,18 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 4154116247259710548, guid: fcc1054e3a4615946b129004a5d6361a, type: 3}
-    - {fileID: 6566490071058371313, guid: fcc1054e3a4615946b129004a5d6361a, type: 3}
-    - {fileID: -3277120799113184706, guid: fcc1054e3a4615946b129004a5d6361a, type: 3}
-    - {fileID: -5333899125598757372, guid: fcc1054e3a4615946b129004a5d6361a, type: 3}
+    - {fileID: 7778997339488307486, guid: 813de4a3235b5c145a354b41f7e75dd4, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.33333334
+    m_StopTime: 0.083333336
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
     m_HasAdditiveReferencePose: 0
-    m_LoopTime: 1
+    m_LoopTime: 0
     m_LoopBlend: 0
     m_LoopBlendOrientation: 0
     m_LoopBlendPositionY: 0

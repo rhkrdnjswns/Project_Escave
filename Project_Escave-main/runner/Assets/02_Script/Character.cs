@@ -27,9 +27,25 @@ public class Character : MonoBehaviour
 
     private GameObject Map;
 
+    [SerializeField] private GameObject Map2;
+    [SerializeField] private GameObject Map2Back;
+    [SerializeField] private GameObject Map2celling;
+    [SerializeField] private GameObject Map1;
+    [SerializeField] private GameObject Map1Back;
+    [SerializeField] private GameObject Map1celling;
+
     private void Awake()
     {
+        Map2 = GameObject.Find("Map2");
+        Map2Back = GameObject.Find("Crystal_Cave");
+        Map2celling = GameObject.Find("001_ceiling (1)");
+
+        Map1 = GameObject.Find("Map1");
+        Map1Back = GameObject.Find("Basic_Cave");
+        Map1celling = GameObject.Find("001_ceiling");
+
         animator = GetComponent<Animator>();
+
         Map = GameObject.FindWithTag("Map");
         invincibility = false;
     }
@@ -68,9 +84,15 @@ public class Character : MonoBehaviour
         }
         else if (jumpCount == 1)
         {
+            animator.SetBool("DoubleJump", true);
             gameObject.GetComponent<Rigidbody2D>().velocity = new Vector3(0, jump2, 0);
             jumpCount += 1;
+            Invoke("SetMove", 0.5f);
         }
+    }
+    public void SetMove()
+    {
+        animator.SetBool("DoubleJump", false);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -83,13 +105,24 @@ public class Character : MonoBehaviour
 
     public void SlidBtn()
     {
-        gameObject.GetComponent<Transform>().rotation = Quaternion.Euler(0, 0, 90f);
         animator.SetBool("Sliding", true);
+        this.GetComponent<BoxCollider2D>().size = new Vector2(3, 2);
     }
 
     public void SlidBtnUp()
     {
-        gameObject.GetComponent<Transform>().rotation = Quaternion.Euler(0, 0, 0);
         animator.SetBool("Sliding", false);
+        this.GetComponent<BoxCollider2D>().size = new Vector2(2.113647f, 3.741959f);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision == Map2)
+        {
+            Map1Back.SetActive(false);
+            Map1celling.SetActive(false);
+            Map2Back.SetActive(true);
+            Map2celling.SetActive(true);
+        }
     }
 }

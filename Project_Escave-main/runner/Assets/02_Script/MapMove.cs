@@ -10,12 +10,12 @@ public class MapMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        StartCoroutine(SpeedUp(3));
     }
 
     public void GameStart()
     {
-        StartCoroutine(SpeedUp(3));
+        mapSpeed = 9f;
         Character.transform.position = new Vector3(-2.8f, -1.15f, 0);
         this.gameObject.transform.position = new Vector3(0, 0, 0);
         DataManager.Instance.score = 0;
