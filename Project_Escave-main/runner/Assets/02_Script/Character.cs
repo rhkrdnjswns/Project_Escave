@@ -21,7 +21,7 @@ public class Character : MonoBehaviour
 
     private Animator animator;
 
-    private float BoosterTime = 3.0f;
+    private float BoosterTime = 1.8f;
     private float indexspeed;
     public bool invincibility;
 
@@ -33,6 +33,8 @@ public class Character : MonoBehaviour
     [SerializeField] private GameObject Map1;
     [SerializeField] private GameObject Map1Back;
     [SerializeField] private GameObject Map1celling;
+
+    GameOverManager gmovma;
 
     private void Awake()
     {
@@ -48,6 +50,15 @@ public class Character : MonoBehaviour
 
         Map = GameObject.FindWithTag("Map");
         invincibility = false;
+
+        gmovma = GameObject.Find("GameManager").GetComponent<GameOverManager>();
+    }
+    private void Update()
+    {
+        if(this.gameObject.transform.position.y < -3)
+        {
+            gmovma.GameOverOn();
+        }
     }
 
     public void BoosterOn()

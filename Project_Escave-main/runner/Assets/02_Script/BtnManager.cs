@@ -28,7 +28,7 @@ public class BtnManager : MonoBehaviour
     {
         GameOver.SetActive(false);
         SettingPanel.SetActive(false);
-        Obstacle.gameOver = false ;
+        GameOverManager.gameOver = false ;
         gmst.GameStart();
         gmst.mapSpeed = 9f;
         Time.timeScale = 1f;
