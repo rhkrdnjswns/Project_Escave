@@ -75,6 +75,7 @@
     <Compile Include="Assets\02_Script\WJ\StyleData.cs" />
     <Compile Include="Assets\03_Resource\Cainos\Pixel Art Monster - Dungeon\Script\MonsterFlyingController.cs" />
     <Compile Include="Assets\02_Script\Character.cs" />
+    <Compile Include="Assets\02_Script\GameOverManager.cs" />
     <Compile Include="Assets\03_Resource\Cainos\Pixel Art Monster - Dungeon\Script\ProjectileLauncher.cs" />
     <Compile Include="Assets\03_Resource\Cainos\Pixel Art Monster - Dungeon\Script\_Demo\UIDemo.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModuleUtils.cs" />

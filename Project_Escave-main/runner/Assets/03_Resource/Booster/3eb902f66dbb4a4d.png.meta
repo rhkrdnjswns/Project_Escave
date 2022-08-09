@@ -1,25 +1,37 @@
 fileFormatVersion: 2
-guid: 74fdcd5469b59b54e8b67bf80bccbf6c
+guid: d252783192f6c78499bdd0c3065ae936
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7285376162372006033
-    second: Mage_0
+      213: -1896156616970555617
+    second: 3eb902f66dbb4a4d_0
   - first:
-      213: 1377322663251520538
-    second: Mage_1
+      213: -4363976550296014300
+    second: 3eb902f66dbb4a4d_1
   - first:
-      213: 2429379624658069490
-    second: Mage_2
+      213: -8177247207753621647
+    second: 3eb902f66dbb4a4d_2
   - first:
-      213: -3092618186771702557
-    second: Mage_3
+      213: -2579590678861476490
+    second: 3eb902f66dbb4a4d_3
   - first:
-      213: -4641263954899877479
-    second: Mage_4
+      213: -6827000549328685591
+    second: 3eb902f66dbb4a4d_4
   - first:
-      213: -8166337472594541346
-    second: Mage_5
+      213: 4562140801553432132
+    second: 3eb902f66dbb4a4d_5
+  - first:
+      213: -5357338872639400531
+    second: 3eb902f66dbb4a4d_6
+  - first:
+      213: -4164886775844516214
+    second: 3eb902f66dbb4a4d_7
+  - first:
+      213: 3429191650074903541
+    second: 3eb902f66dbb4a4d_8
+  - first:
+      213: 1202688139450997649
+    second: 3eb902f66dbb4a4d_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -121,127 +133,211 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mage_0
+      name: 3eb902f66dbb4a4d_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 361
-        height: 430
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f6fc7badaf425ea90800000000000000
-      internalID: -7285376162372006033
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage_1
-      rect:
-        serializedVersion: 2
-        x: 369
+        x: 8
         y: 8
-        width: 362
-        height: 414
+        width: 244
+        height: 234
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1ca3343aab3d1310800000000000000
-      internalID: 1377322663251520538
+      spriteID: f1fa6f66a9f7fa5e0800000000000000
+      internalID: -1896156616970555617
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage_2
+      name: 3eb902f66dbb4a4d_1
       rect:
         serializedVersion: 2
-        x: 739
-        y: 0
-        width: 352
-        height: 430
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2f7e050b5e3e6b120800000000000000
-      internalID: 2429379624658069490
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage_3
-      rect:
-        serializedVersion: 2
-        x: 1099
+        x: 258
         y: 8
-        width: 359
-        height: 414
+        width: 244
+        height: 234
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ec5f8ff420d415d0800000000000000
-      internalID: -3092618186771702557
+      spriteID: 422b877e27a0073c0800000000000000
+      internalID: -4363976550296014300
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage_4
+      name: 3eb902f66dbb4a4d_2
       rect:
         serializedVersion: 2
-        x: 1458
+        x: 508
         y: 8
-        width: 433
-        height: 284
+        width: 244
+        height: 234
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9914e53060be69fb0800000000000000
-      internalID: -4641263954899877479
+      spriteID: 17f5a4d4df4948e80800000000000000
+      internalID: -8177247207753621647
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage_5
+      name: 3eb902f66dbb4a4d_3
       rect:
         serializedVersion: 2
-        x: 1909
-        y: 0
-        width: 351
-        height: 430
+        x: 758
+        y: 8
+        width: 244
+        height: 234
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed48a06f5575bae80800000000000000
-      internalID: -8166337472594541346
+      spriteID: 67d8d80e1f3733cd0800000000000000
+      internalID: -2579590678861476490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3eb902f66dbb4a4d_4
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 8
+        width: 244
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e5fddfdb2f9141a0800000000000000
+      internalID: -6827000549328685591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3eb902f66dbb4a4d_5
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 8
+        width: 244
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44e78e343eaff4f30800000000000000
+      internalID: 4562140801553432132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3eb902f66dbb4a4d_6
+      rect:
+        serializedVersion: 2
+        x: 1508
+        y: 8
+        width: 244
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da5dfe20ea8e6a5b0800000000000000
+      internalID: -5357338872639400531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3eb902f66dbb4a4d_7
+      rect:
+        serializedVersion: 2
+        x: 1758
+        y: 8
+        width: 244
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8ec01c3b895336c0800000000000000
+      internalID: -4164886775844516214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3eb902f66dbb4a4d_8
+      rect:
+        serializedVersion: 2
+        x: 2008
+        y: 8
+        width: 244
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f3437913afe69f20800000000000000
+      internalID: 3429191650074903541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3eb902f66dbb4a4d_9
+      rect:
+        serializedVersion: 2
+        x: 2258
+        y: 8
+        width: 244
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19b5d8f9d7ec0b010800000000000000
+      internalID: 1202688139450997649
       vertices: []
       indices: 
       edges: []
