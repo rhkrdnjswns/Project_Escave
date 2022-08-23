@@ -71,17 +71,17 @@ public class Character : MonoBehaviour
     {
         while (a > 0)
         {
+            animator.SetBool("Booster", true);
             invincibility = true;
             Map.GetComponent<MapMove>().mapSpeed = b * 3;
             a--;
             yield return new WaitForSeconds(1);
         }
         Map.GetComponent<MapMove>().mapSpeed = b;
-        StartCoroutine(invinoff());
-    }
 
-    IEnumerator invinoff()
-    {
+
+
+        animator.SetBool("Booster", false);
         yield return new WaitForSeconds(1.5f);
         invincibility = false;
     }

@@ -11,6 +11,8 @@ public class MapMove : MonoBehaviour
     void Start()
     {
         StartCoroutine(SpeedUp(3));
+
+        //this.gameObject.transform.position = new Vector3(-440, 0, 0);
     }
 
     public void GameStart()
