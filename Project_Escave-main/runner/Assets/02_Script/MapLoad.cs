@@ -16,13 +16,15 @@ public class MapLoad : MonoBehaviour
         //StartCoroutine(FadeInStart());
     }
 
+
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.transform.tag == "Player")
         {
-            Destroy(this.gameObject);
-            StartCoroutine(FadeOutStart());
-            StartCoroutine(FadeInStart());
+            //StartCoroutine(FadeOutStart());
+            //StartCoroutine(FadeInStart());
+            this.gameObject.SetActive(false);
             if (this.gameObject.transform.parent == Map[0])
             {
                 GameObject temp = Instantiate(Map[Random.Range(0, 2)], 
