@@ -12,10 +12,12 @@ public class MainManager : MonoBehaviour
     public Sprite lockIcon;
     public Text characterBestTxt;
     public Text totalBestTxt;
+    public Text totalTxt;
     public Text styleTxt;
     public Image[] styleIconArray;
     public GameObject stylePopUp;
     public GameObject conditionPopUp;
+    public GameObject settingObj;
     private CharacterData currentCharacter;
     private void Awake()
     {
@@ -25,6 +27,7 @@ public class MainManager : MonoBehaviour
     {
         InitAllCharacterSelectUI();
         totalBestTxt.text = GameManager.instance.TotalBest == 0 ? "기록 없음" : GameManager.instance.TotalBest.ToString();
+        totalTxt.text = GameManager.instance.Total == 0 ? "기록 없음" : GameManager.instance.Total.ToString();
         UpdateCurrentCharacter(GameManager.instance.CharacterSelectIndex);
     }
     private void InitAllCharacterSelectUI()
@@ -172,5 +175,9 @@ public class MainManager : MonoBehaviour
     public void BtnEvt_ActiveConditionUI()
     {
         conditionPopUp.SetActive(!conditionPopUp.activeSelf);
+    }
+    public void BtnEvt_ActiveSetting()
+    {
+        settingObj.SetActive(!settingObj.activeSelf);
     }
 }

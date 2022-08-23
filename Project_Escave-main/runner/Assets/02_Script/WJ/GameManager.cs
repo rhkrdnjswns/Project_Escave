@@ -8,9 +8,11 @@ public class GameManager : MonoBehaviour
     public CharacterData[] characterDataArray;
     private int totalBest;
     private int characterSelectIndex;
+    private int total;
 
     public int CharacterSelectIndex { get => characterSelectIndex; set => characterSelectIndex = value; }
     public int TotalBest { get => totalBest; set => totalBest = value; }
+    public int Total { get => total; set => total = value; }
 
     private void Awake()
     {
