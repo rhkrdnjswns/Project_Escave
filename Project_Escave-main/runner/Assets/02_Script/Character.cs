@@ -36,6 +36,10 @@ public class Character : MonoBehaviour
 
     GameOverManager gmovma;
 
+    private BoxCollider2D[] colliders;
+
+    private bool isSlide = false;
+
     private void Awake()
     {
         Map2 = GameObject.Find("Map2");
@@ -52,6 +56,8 @@ public class Character : MonoBehaviour
         invincibility = false;
 
         gmovma = GameObject.Find("GameManager").GetComponent<GameOverManager>();
+
+        this.colliders = this.GetComponents<BoxCollider2D>();
     }
     private void Update()
     {
@@ -59,6 +65,7 @@ public class Character : MonoBehaviour
         {
             gmovma.GameOverOn();
         }
+        this.animator.SetBool("Sliding", this.isSlide);
     }
 
     public void BoosterOn()
@@ -116,14 +123,20 @@ public class Character : MonoBehaviour
 
     public void SlidBtn()
     {
-        animator.SetBool("Sliding", true);
-        this.GetComponent<BoxCollider2D>().size = new Vector2(3, 2);
+        /*animator.SetBool("Sliding", true);
+        this.GetComponent<BoxCollider2D>().size = new Vector2(3, 2);*/
+        colliders[0].enabled = false;
+        colliders[1].enabled = true;
+        isSlide = true;
     }
 
     public void SlidBtnUp()
     {
-        animator.SetBool("Sliding", false);
-        this.GetComponent<BoxCollider2D>().size = new Vector2(2.113647f, 3.741959f);
+        /*animator.SetBool("Sliding", false);
+        this.GetComponent<BoxCollider2D>().size = new Vector2(2.113647f, 3.741959f);*/
+        colliders[0].enabled = true;
+        colliders[1].enabled = false;
+        isSlide = false;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
