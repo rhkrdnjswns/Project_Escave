@@ -68,7 +68,9 @@
     <Compile Include="Assets\DOTween\Modules\DOTweenModuleUI.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
     <Compile Include="Assets\02_Script\ScoreManager.cs" />
+    <Compile Include="Assets\02_Script\InGameManager.cs" />
     <Compile Include="Assets\02_Script\Obstacle.cs" />
+    <Compile Include="Assets\02_Script\Player.cs" />
     <Compile Include="Assets\02_Script\Booster.cs" />
     <Compile Include="Assets\02_Script\WJ\GameManager.cs" />
     <Compile Include="Assets\03_Resource\Cainos\Pixel Art Monster - Dungeon\Script\AutoDestroy.cs" />
@@ -92,6 +94,7 @@
     <Compile Include="Assets\03_Resource\Cainos\Pixel Art Monster - Dungeon\Script\MonsterInputMouseAndKeyboard.cs" />
     <Compile Include="Assets\02_Script\WJ\MainManager.cs" />
     <Compile Include="Assets\03_Resource\Gazielle\Scripts\CameraMovements.cs" />
+    <Compile Include="Assets\02_Script\ObstacleUtility.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModuleAudio.cs" />
     <Compile Include="Assets\02_Script\WJ\SceneLoadManager.cs" />
     <Compile Include="Assets\02_Script\WJ\ScrollUtility.cs" />

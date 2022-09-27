@@ -154,7 +154,7 @@ public class MainManager : MonoBehaviour
     public void BtnEvt_EquipeStyle()
     {
         UpdateStyleUI();
-        stylePopUp.SetActive(!stylePopUp.activeSelf);
+        //stylePopUp.SetActive(!stylePopUp.activeSelf);
         UpdateStylePopUpUI(stylePopUp.activeSelf);
     }
     private void SelectStyle(int index)
